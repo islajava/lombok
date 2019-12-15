@@ -1,12 +1,13 @@
 package com.islajava.lombok;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Builder
+@Builder @Getter @Setter
 public class Libro {
 
+	private String isbn;
 	private String titulo;
 	private String autor;
 }
